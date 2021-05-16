@@ -1,36 +1,38 @@
 class SessionsController < ApplicationController
-  def new
-  end
 
-  def create
-  end
+skip_before_action :authorized, only: [:new, :create, :welcome]
+    
+    def new
+    end
 
-  def login
-  end
+    def create
+      @user = User.find_by(username: params[:username])
+      if @user && @user.authenticate(params[:password])
+        sessions[:user_id] = @user.id
+        redirect_to '/welcome'
+      else
+        redirect_to '/login'
+    end
 
-  def welcome
-  end
-  def rails
-  end
+    def page_requires_login
 
-  def g
-  end
+    end
 
-  def controller
-  end
+    def login
+    end
 
-  def sessions
-  end
+    def welcome
+    end
 
-  def new
-  end
+    def rails
+    end
 
-  def create
-  end
+    def g
+    end
 
-  def login
-  end
+    def controller
+    end
 
-  def welcome
-  end
+    def sessions
+    end
 end
