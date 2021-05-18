@@ -12,4 +12,9 @@ class UsersController < ApplicationController
    session[:user_id] = @user.id
    redirect_to '/welcome'
   end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
 end
