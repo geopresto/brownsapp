@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :set_user, only:[:show]
   skip_before_action :authorized, only: [:new, :create]
 
   def new
@@ -16,5 +16,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find params.require(:id)
   end
+
+
 
 end
