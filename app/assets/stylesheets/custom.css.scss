@@ -45,9 +45,20 @@ html body {
 }
 
 .sharejumbo{
-    background-image: asset-url('jpeg');
+    background-image: asset-url('Bake.jpeg');
     background-position: center center;
     background-size: cover; 
 	background-repeat: no-repeat; 
+}
+
+.sharejumbo2{
+    background-image: asset-url('BrownsTD.jpeg');
+    background-position: center center;
+    background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+.homebutton{
+    color: darkorange; 
 }
 
