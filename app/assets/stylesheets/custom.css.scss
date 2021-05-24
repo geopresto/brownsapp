@@ -40,6 +40,14 @@ html body {
 	background-repeat: no-repeat; 
 }
 
-#page-content {
+#page-content{
     background-color: rgb(0, 0, 0);
 }
+
+.sharejumbo{
+    background-image: asset-url('jpeg');
+    background-position: center center;
+    background-size: cover; 
+	background-repeat: no-repeat; 
+}
+
