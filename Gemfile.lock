@@ -240,6 +240,9 @@ DEPENDENCIES
   webdrivers
   webpacker (~> 4.0)
 
+heroku buildpacks:set heroku/ruby
+heroku buildpacks:set heroku/nodejs
+
 RUBY VERSION
    ruby 3.0.0p0
 
